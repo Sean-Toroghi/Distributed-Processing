@@ -1,0 +1,15 @@
+#copy file from local drive to HDFS
+$ hadoop fs -copyFromLocal data_1.txt
+
+#verify the file is copied
+$ hadoop fs -ls
+
+#make a copy of the file within the HDFS
+$hadoop fs -cp data_1.txt data_1_copy.txt
+
+#copy a file from HDFS to the local drive
+$hadoop fs -copyToLocal data_1_copy.txt
+
+#delete a file in HDFS
+hadoop fs -rm data_1_copy.txt
+
