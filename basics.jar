@@ -13,8 +13,26 @@ $hadoop fs -copyToLocal data_1_copy.txt
 #delete a file in HDFS
 hadoop fs -rm data_1_copy.txt
 
+#check the MapReduce examples in the Hadoop
+$hadoop jar /usr/jars/hadoop-examples.jar
+
 
 *****************************************
 #develop a basic application to count no. of words and copy the result into the local drive
 
+#verify the file exists
+$hadoop fs -ls
+
+#run WordCound command
+$hadoop jar /usr/jars/hadoop-example.jar wordcount data_1.txt out
+
+#check the output
+$hadoop fs -ls
+$hadoop fs -ls out
+
+#copy results to the local system
+$hadoop fs -copyToLocal out/part-r-0000 results_1.txt
+
+#view the results in the local system
+$ more results_1.txt
 
