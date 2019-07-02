@@ -13,3 +13,8 @@ $hadoop fs -copyToLocal data_1_copy.txt
 #delete a file in HDFS
 hadoop fs -rm data_1_copy.txt
 
+
+*****************************************
+#develop a basic application to count no. of words and copy the result into the local drive
+
+
