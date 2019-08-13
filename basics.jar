@@ -7,6 +7,9 @@ $ hadoop fs -ls
 #make a copy of the file within the HDFS
 $hadoop fs -cp data_1.txt data_1_copy.txt
 
+#change the name of a file within the HDFS
+$hadoop fs -mv data_1_copy.txt data1_copy.txt
+
 #copy a file from HDFS to the local drive
 $hadoop fs -copyToLocal data_1_copy.txt
 
