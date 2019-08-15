@@ -38,4 +38,4 @@ $hadoop fs -copyToLocal out/part-r-0000 results_1.txt
 
 #view the results in the local system
 $ more results_1.txt
-
+ 
