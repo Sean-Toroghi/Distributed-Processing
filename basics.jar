@@ -38,4 +38,19 @@ $hadoop fs -copyToLocal out/part-r-0000 results_1.txt
 
 #view the results in the local system
 $ more results_1.txt
+
+*****************************************
+#Vector model data - Query and TF_IDF - Lucene: a search engine that uses a vector space model to index data.
+
+#data contains documents in .csv format
+# import document in the data directory (Query with weighted term)
+./runLuceneQuery.sh data
+#searching term/s return the score for each document
+#for boosting a term, we need to use caret followed by number after a term
+term1^5
+
+# import document in the data directory (TF_IDF)
+./ runLuceneTF-IDF.sh data 
+
+
  
